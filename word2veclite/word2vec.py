@@ -151,19 +151,18 @@ class Word2Vec:
 
 # Skipgram
 
-# corpus = "I like playing football with my friends"
-# skipgram = Word2Vec(method="skipgram", corpus=corpus,
-#                 window_size=1, n_hidden=2,
-#                 n_epochs=600, learning_rate=0.1)
-# W1, W2, loss_vs_epoch = skipgram.run()
+corpus = "I like playing football with my friends"
+skipgram = Word2Vec(method="skipgram", corpus=corpus,
+                window_size=1, n_hidden=2,
+                n_epochs=600, learning_rate=0.1)
+W1, W2, loss_vs_epoch = skipgram.run()
 
-# # plt.yticks(range(0,24,2))
-# # plt.ylim([6,24])
-# plt.xlabel('Epochs')
-# plt.ylabel('Error')
-
-# plt.plot(loss_vs_epoch)
-# plt.show()
+# plt.yticks(range(0,24,2))
+# plt.ylim([6,24])
+plt.xlabel('Epochs')
+plt.ylabel('Error')
+plt.plot(loss_vs_epoch)
+plt.show()
 
 # CBOW
 
